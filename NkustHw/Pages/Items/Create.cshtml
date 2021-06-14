@@ -1,0 +1,54 @@
+﻿@page
+@model RazorPages.Pages.Items.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>創建</h1>
+
+<h4>商品資訊</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Iteminfo.Title" class="control-label">品名</label>
+                <input asp-for="Iteminfo.Title" class="form-control" />
+                <span asp-validation-for="Iteminfo.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Iteminfo.ReleaseDate" class="control-label">上傳時間</label>
+                <input asp-for="Iteminfo.ReleaseDate" class="form-control" />
+                <span asp-validation-for="Iteminfo.ReleaseDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Iteminfo.Genre" class="control-label">商品類型</label>
+                <input asp-for="Iteminfo.Genre" class="form-control" />
+                <span asp-validation-for="Iteminfo.Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Iteminfo.Price" class="control-label">價格</label>
+                <input asp-for="Iteminfo.Price" class="form-control" />
+                <span asp-validation-for="Iteminfo.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Iteminfo.Count" class="control-label">數量</label>
+                <input asp-for="Iteminfo.Count" class="form-control" />
+                <span asp-validation-for="Iteminfo.Count" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="創建" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">回到主頁</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
