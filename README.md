@@ -21,3 +21,11 @@
 
 ![image](https://user-images.githubusercontent.com/66867453/121877342-168d7300-cd3d-11eb-97ab-6fcb5f704af6.png)
 
+
+
+**參考資料**
+
+https://docs.microsoft.com/zh-tw/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-5.0&tabs=visual-studio
+
+https://github.com/yinchang0626/NKUST_10902
+
